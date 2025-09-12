@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+@theme {
+    --color-dark-background: #242641;
+    --color-dark-card: #303151;
+    --color-dark-foreground: #dde0e2;
+    --color-dark-border: #41436b;
+}
+
+@layer utilities {
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    /* IE and Edge */
+    .no-scrollbar {
+        -ms-overflow-style: none;
+    }
+    /* Firefox */
+    .no-scrollbar {
+        scrollbar-width: none;
+    }
+}
